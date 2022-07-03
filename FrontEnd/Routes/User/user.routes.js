@@ -7,4 +7,6 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", userController.getIndex);
+
+router.get("/thanks", userController.getThanks);
 module.exports = router;

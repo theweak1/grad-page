@@ -9,7 +9,7 @@ append content
 
         br
         br
-        form.form(action="/contact", method="post") 
+        form.form(action="http://localhost:5001/grad-page/us-central1/API/contact", method="post") 
             label#fname(for="fname") First Name:
             input#fname(type="text", name="fname", placeholder="John", required)
             br
@@ -21,6 +21,6 @@ append content
             br
             label#reason(for="reason") Reason:
             br 
-            textarea#reason(name="Reason", rows="6" cols="70")  
+            textarea#reason(name="reason", rows="6" cols="70")  
             br
             input(type="submit", value="Submit")

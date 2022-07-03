@@ -17,10 +17,10 @@ exports.getIndex = (req, res, next) => {
     });
   }
 };
-exports.getAbout = (req, res, next) => {
-  res.render("about", {
-    docTitle: "About Me",
-    path: "/about",
+exports.getThanks = (req, res, next) => {
+  res.render("thanks", {
+    docTitle: "Thank You",
+    path: "/thanks",
     year: utility.currentYear,
   });
 };

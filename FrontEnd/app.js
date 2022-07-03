@@ -1,6 +1,6 @@
 //core module
 const path = require("path");
-const PORT = 5001;
+const PORT = 5000;
 //ow document import
 const userRoutes = require("./Routes/User/user.routes.js");
 const errorController = require("./controllers/error.controller.js");
