@@ -8,6 +8,7 @@ async function HttpAddContactInfo(req, res) {
     reason: req.body.reason,
   };
   try {
+    /* Lines of code below are commented to not write to DB while testing form submition and styling for the form and buttons */
     // let createdContact = await createContact(newContact);
     // while (!createdContact) {
     //   null;
