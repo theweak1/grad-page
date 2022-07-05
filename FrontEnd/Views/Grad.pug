@@ -9,18 +9,27 @@ append content
 
         br
         br
-        form.form(action="http://localhost:5001/grad-page/us-central1/API/contact", method="post") 
-            label#fname(for="fname") First Name:
-            input#fname(type="text", name="fname", placeholder="John", required)
-            br
-            label#lname(for="lname") Last Name: 
-            input#lname(type="text", name="lname", placeholder="down", required)
-            br
-            label#email(for="email") email: 
-            input#email(type="email", name="email", placeholder="johnDown@test.com", required)
-            br
-            label#reason(for="reason") Reason:
-            br 
-            textarea#reason(name="reason", rows="6" cols="70")  
-            br
-            input(type="submit", value="Submit")
+        div
+            form.form(action="http://localhost:5001/grad-page/us-central1/API/contact", method="post")
+                div.row
+                    div.col-25 
+                        label#fname(for="fname") First Name:
+                    div.col
+                        input#fname(type="text", name="fname", placeholder="John", required)
+                div.row
+                    div.col-25 
+                        label#lname(for="lname") Last Name: 
+                    div.col
+                        input#lname(type="text", name="lname", placeholder="down", required)
+                div.row
+                    div.col-25 
+                        label#email(for="email") email: 
+                    div.col
+                        input#email(type="email", name="email", placeholder="johnDown@test.com", required)
+                div.row
+                    div.col-25 
+                     label#reason(for="reason") Reason:
+                    div.col
+                        textarea#reason(name="reason", rows="6" cols="70")  
+                div.row
+                    button(type="submit") Submit

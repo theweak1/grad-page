@@ -1,7 +1,8 @@
 extends layouts/main-layout.pug
 
 append content
-    h1 this is the thank you page
     center
-        form(action="/", method="get")
+        h1 Thank you for providing your contact information, <br> I will do my best to contact you as soon as possible.
+        div 
+        form.back(action="/", method="get")
             button(type="submit") Go Back

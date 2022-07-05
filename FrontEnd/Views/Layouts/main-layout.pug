@@ -8,6 +8,8 @@ html(lang="en")
         link(rel="stylesheet", href="/css/Style.css")
         block style
     body
-        block content       
-    footer 
-        p copyright &copy #{year}
+        div#page-container
+            div#content-wrap
+                block content       
+        footer#footer
+            p copyright &copy #{year}

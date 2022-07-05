@@ -8,10 +8,10 @@ async function HttpAddContactInfo(req, res) {
     reason: req.body.reason,
   };
   try {
-    let createdContact = await createContact(newContact);
-    while (!createdContact) {
-      null;
-    }
+    // let createdContact = await createContact(newContact);
+    // while (!createdContact) {
+    //   null;
+    // }
     return res.status(201).redirect("http://localhost:5000/thanks");
   } catch (error) {
     res.status(500).send({ contact: newContact });
